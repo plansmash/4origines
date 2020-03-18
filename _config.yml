@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 4 Origines
+title: 4 Origines Brewery
 email: webmaster@4origines.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -34,6 +34,10 @@ port: 4002
 theme: minima
 plugins:
   - jekyll-feed
+
+# SASS
+sass:
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
