@@ -26,7 +26,7 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
+    padding: 15px 35px;
     background: #000;
     border: none;
     border-radius: 0;
@@ -36,6 +36,10 @@ a:focus {
     button {
         color: #fff;
         border: solid 1px #fff;
+    }
+
+    img {
+        height: $nav-bar-height;
     }
 }
 
@@ -154,7 +158,7 @@ a.article:hover {
 
 main {
     padding: 20px;
-    margin-top: $nav-bar-height;
+    margin-top: $nav-bar-height + 25px;
 
     h1 {
         text-align: center;
