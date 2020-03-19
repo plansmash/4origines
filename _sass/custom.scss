@@ -4,18 +4,15 @@
 
 @import "//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 @import "//fonts.googleapis.com/css?family=Oswald%3A&#038;subset=latin&#038;ver=5.2.5";
+@import "//fonts.googleapis.com/css?family=Lato%3A400&#038;subset=latin&#038;ver=5.2.5";
 
 body {
     font-family: 'Oswald', sans-serif;
-	background: #fff;
-	color: #000;
+	background: #000;
+	color: #fff;
+    letter-spacing: 1.5px;
 }
 
-p {
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-}
 
 a,
 a:hover,
@@ -157,11 +154,76 @@ a.article:hover {
 ----------------------------------------------------- */
 
 main {
-    padding: 20px;
-    margin-top: $nav-bar-height + 25px;
+    margin-top: $nav-bar-height;
+    background-color: #fff;
+    color: #000;
+    
+    #message {
+        margin-top: $nav-bar-height;
+        padding: 50px 25px;
+        background-color: #a16000;
+        width: 100%;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.5em;
 
+        a:link,
+        a:visited {
+            color: #fba3a3;
+            border-bottom: solid 1px;
+            text-shadow: #000 -1px 1px;
+
+            &:hover {
+                border:none;
+                color: lighten($color: #fba3a3, $amount: 10%);
+                text-shadow: none;
+            }
+        }
+
+        .heart {
+            color: red;
+            text-shadow: #000 -1px 1px;
+        }
+    }
+    
     h1 {
+        margin-top: 150px;
         text-align: center;
         margin-bottom: 75px;
     }
+
+    section {
+        padding: 125px 25px;
+
+        &:nth-child(2n) {
+            background-color: $orange;
+            color: #fff;
+        }
+
+        .btn {
+            margin-top: 25px;
+        }
+    }
+
+    .tagline {
+        font-family: Lato;
+        padding-top: 0;
+    }
+}
+
+.btn-primary {
+    background-color: #fff;
+    border: solid 1px #000;
+    color: #000;
+    padding: 15px;
+
+    &:hover {
+        background-color: $orange;
+    }
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    min-height: 100px;
 }

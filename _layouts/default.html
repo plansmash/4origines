@@ -8,7 +8,17 @@
     {%- include header.html -%}
 
     <main>
-        {{ content }}
+      
+      {%- if page.message == true -%}
+      {%- include message.html -%}
+      {%- endif -%}
+      
+      {%- if page.title -%}
+      <h1 class="page-heading">{{ page.title }}</h1>
+      {%- endif -%}
+  
+      {{ content }}
+   
     </main>
 
     {%- include footer.html -%}
