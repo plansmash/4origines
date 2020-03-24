@@ -203,10 +203,6 @@ main {
 		&.no-gutters {
 			margin: 0;
 			padding: 0;
-
-			img {
-				width: 100%;
-			}
 		}
 
 		.btn {
@@ -233,7 +229,6 @@ main {
 		}
 		
 		a {
-			// color: red;
 			position: absolute;
 			top: 50%;
 			z-index: 100;
@@ -257,6 +252,25 @@ main {
 	}
 }
 
+.services {
+
+	h2 {
+		padding: 25px;
+		// margin-top: -55px;
+		margin-bottom: 25px;
+		border: solid 5px #000;
+		font-size: 2.5em;
+	}
+
+	.tagline {
+		margin-bottom: 25px;
+	}
+
+	.fa {
+		padding-bottom: 350px;
+	}
+}
+
 .btn-primary {
 	background-color: #fff;
 	border: solid 1px #000;
@@ -266,6 +280,18 @@ main {
 	&:hover {
 		background-color: $orange;
 	}
+}
+
+.fa-beer {
+	color: $orange;
+}
+
+.fa-map-marker-alt {
+	color: red;
+}
+
+.fa-truck {
+	color: teal;
 }
 
 footer {
