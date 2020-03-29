@@ -161,7 +161,7 @@ main {
 	#message {
 		margin-top: $nav-bar-height;
 		padding: 50px 25px;
-		background-color: #a16000;
+		background-color: $orange;
 		width: 100%;
 		color: #fff;
 		font-weight: 600;
@@ -230,6 +230,7 @@ main {
 	.banner {
 		font-size: 2em;
 		height: 650px;
+		background-color: #000 !important;
 
 		.img	{
 			background-repeat: no-repeat;
