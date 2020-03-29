@@ -169,20 +169,15 @@ main {
 
 		a:link,
 		a:visited {
-			color: #fba3a3;
+			color: #54dac3;
 			border-bottom: solid 1px;
 			text-shadow: #000 -1px 1px;
 
 			&:hover {
 				border:none;
-				color: lighten($color: #fba3a3, $amount: 10%);
+				color: darken($color: $orange, $amount: 25%);
 				text-shadow: none;
 			}
-		}
-
-		.heart {
-			color: red;
-			text-shadow: #000 -1px 1px;
 		}
 	}
 
@@ -296,7 +291,7 @@ main {
 }
 
 .fa-beer {
-	color: $orange;
+	color: brown;
 }
 
 .fa-map-marker-alt {
