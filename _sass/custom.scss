@@ -173,7 +173,7 @@ main {
 			border-bottom: solid 1px;
 			text-shadow: #000 -1px 1px;
 
-			&:hover {
+			&:hover, &:focus {
 				border:none;
 				color: darken($color: $orange, $amount: 25%);
 				text-shadow: none;
@@ -197,7 +197,7 @@ main {
 			padding: 15px;
 			margin-top: 25px;
 		
-			&:hover {
+			&:hover, &:focus {
 				background-color: $orange;
 			}
 		}
@@ -205,6 +205,19 @@ main {
 		.partners {
 			ul {
 				margin-top: 65px;
+
+				a {
+					img {
+						border: solid 1px #fff;
+						padding: 25px;
+						background-color: lighten($color: $orange, $amount: 20%);
+						
+						&:hover, &:focus {
+							border: solid 3px;
+						}
+					}
+
+				}
 			}
 		}
 
@@ -261,7 +274,7 @@ main {
 			text-shadow: 1px 2px #000;
 			transition: top 1s ease;
 
-			&:hover {
+			&:hover, &:focus {
 				top: 48%;
 				background-color: rgba(255, 255, 255, 0.7);
 				color: #000;
